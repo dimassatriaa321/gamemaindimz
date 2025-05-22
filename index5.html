@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Bukti Pembayaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 40px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Upload Bukti Pembayaran</h2>
+    <form action="proses-upload.php" method="post" enctype="multipart/form-data">
+        <label>Nama:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Paket:</label>
+        <select name="paket" required>
+            <option value="starter">@Max</option>
+            <option value="bisnis">xmasix</option>
+            <option value="pro">Pro</option>
+        </select>
+
+        <label>Upload Bukti Pembayaran (JPG/PNG):</label>
+        <input type="file" name="bukti" accept=".jpg,.jpeg,.png" required>
+        <button><a href="pembayaran.html">Pesan Sekarang</button
+    </form>
+</div>
+
+</body>
+</html>
