@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pembayaran</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f8fa;
+            padding: 40px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulir Pembayaran</h2>
+    <form action="proses-pembayaran.php" method="post">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Pilih Paket:</label>
+        <select name="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <option value="starter">@max - Rp15.000</option>
+            <option value="bisnis">xmasix - Rp45.000</option>
+            <option value="pro">Pro - Rp75.000</option>
+        </select>
+
+        <label>Metode Pembayaran:</label>
+        <select name="metode" required>
+            <option value="">-- Pilih Metode --</option>
+            <option value="transfer">Transfer Bank</option>
+            <option value="e-wallet">E-Wallet</option>
+            <option value="qris">QRIS</option>
+        </select>
+<button><a href="proses-pembayaran.html">Pesan Sekarang</button
+    </form>
+</div>
+
+</body>
+</html>

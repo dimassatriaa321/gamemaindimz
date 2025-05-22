@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulir Pengisian Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f4f8;
+            padding: 40px;
+        }
+        .form-container {
+            background: #fff;
+            padding: 30px;
+            max-width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulir Isian Pengguna</h2>
+    <form action="proses-formulir.php" method="post">
+        <label>Nama Lengkap:</label>
+        <input type="text" name="nama" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" required>
+
+        <label>Nomor HP:</label>
+        <input type="tel" name="hp" required>
+
+        <label>Jenis Paket:</label>
+        <select name="paket" required>
+            <option value="">-- Pilih Paket --</option>
+            <option value="starter">@Max</option>
+            <option value="bisnis">xmasix</option>
+            <option value="pro">Pro</option>
+        </select>
+
+        <label>Catatan Tambahan:</label>
+        <textarea name="catatan"></textarea>
+
+       <button><a href="index3.html">Pesan Sekarang</button
+    </form>
+</div>
+
+</body>
+</html>
